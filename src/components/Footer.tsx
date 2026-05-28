@@ -5,6 +5,7 @@ import GitIcon from "./icons/github";
 import LinkedInIcon from "./icons/linkedin";
 import PhoneIcon from "./icons/phone";
 import ProfilePic from "../assets/images/profilepic.png";
+import DisplayTitle from "./DisplayTitle";
 
 type FooterProps = {
   displayTitle: string;
@@ -21,9 +22,7 @@ const platforms = [
 export default function Footer({ displayTitle, subtitle }: FooterProps) {
   return (
     <footer className="bg-yellow px-10 pt-20 pb-74 md:px-30 lg:px-80 flex flex-col gap-4 rounded-t-4xl relative">
-      <h1 className="text-gray-blue font-primary font-bold text-5xl md:text-7xl lg:text-8xl">
-        {displayTitle}
-      </h1>
+      <DisplayTitle title={displayTitle} />
       <Title variant="h4" title={subtitle} />
       <div className="flex flex-col gap-4">
       {platforms.map((platform) => (
