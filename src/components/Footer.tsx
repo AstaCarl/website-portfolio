@@ -17,15 +17,16 @@ const platforms = [
   { icon: <GitIcon height={18} width={18} color="var(--color-gray-blue)" />, label: "GitHub: https://github.com" },
   { icon: <LinkedInIcon />, label: "LinkedIn: https://linkedin.com" },
 ];
+// lg:px-80
 
 export default function Footer({ displayTitle, subtitle }: FooterProps) {
   return (
-    <footer className="bg-yellow px-60 py-30 lg:px-80 flex flex-col gap-4 rounded-t-4xl relative">
-      <h1 className="text-gray-blue font-primary font-bold text-8xl">
+    <footer className="bg-yellow px-10 pt-20 pb-74 md:px-30 lg:px-80 flex flex-col gap-4 rounded-t-4xl relative">
+      <h1 className="text-gray-blue font-primary font-bold text-5xl md:text-7xl lg:text-8xl">
         {displayTitle}
       </h1>
       <Title variant="h4" title={subtitle} />
-      <div className="flex flex-col gap-4 mt-10">
+      <div className="flex flex-col gap-4">
       {platforms.map((platform) => (
         <div className="flex items-center gap-2">
         {platform.icon} 
@@ -35,7 +36,7 @@ export default function Footer({ displayTitle, subtitle }: FooterProps) {
         </div>
       ))}
       </div>
-      <img src={ProfilePic} alt="Profile Picture" className="absolute bottom-0 right-0 w-1/4 opacity-90" />
+      <img src={ProfilePic} alt="Profile Picture" className="absolute bottom-0 right-0 w-[60%] max-w-70 md:max-w-90 opacity-90" />
     </footer>
   );
 }
