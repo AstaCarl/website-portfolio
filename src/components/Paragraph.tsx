@@ -1,8 +1,8 @@
 
 
-export default function Paragraph({ children, variant }: { children: React.ReactNode; variant?: string }) {
+export default function Paragraph({ children, variant, className }: { children: React.ReactNode; variant?: string; className?: string }) {
   return (
-    <p className={`text-gray-blue text-xs md:text-base ${variant === "code" ? "font-code" : "font-primary"}`}>
+    <p className={`text-gray-blue ${variant === "code" ? "font-code" : "font-primary"} ${className || ""}`}>
       {children}
     </p>
   );
