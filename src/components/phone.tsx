@@ -8,7 +8,7 @@ export default function Phone({
   alt = "App screenshot",
 }: PhoneProps) {
   return (
-    <div style={{ position: "relative", width: "336px", flexShrink: 0 }}>
+    <div style={{ position: "relative", flexShrink: 1 }}>
       <img
         src={screenshot}
         alt={alt}

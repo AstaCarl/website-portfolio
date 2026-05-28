@@ -1,4 +1,4 @@
-import Title from "./Title";
+import Paragraph from "./Paragraph";
 
 type FeatureProps = {
   features: string[];
@@ -7,22 +7,22 @@ type FeatureProps = {
 
 export default function Features({ features, stack }: FeatureProps) {
   return (
-    <div className="bg-white-overlay w-[70%] rounded-4xl py-4 px-20 flex justify-between ">
-      <div className="flex flex-col gap-2">
-        <Title variant="h4" title="Key Features" />
+    <div className="bg-white-overlay rounded-xl py-4 px-4 flex justify-center gap-10 w-full">
+      <div className="flex flex-col gap-1">
+        <Paragraph variant="code">Key Features</Paragraph>
         <ul className="list-disc list-inside">
           {features.map((feature) => (
-            <li className="font-primary text-dark-blue" key={feature}>
+            <li className="font-code text-gray-blue text-sm" key={feature}>
               {feature}
             </li>
           ))}
         </ul>
       </div>
-      <div className="flex flex-col gap-2">
-        <Title variant="h4" title="Tech Stack" />
+      <div className="flex flex-col gap-1">
+        <Paragraph variant="code">Technologies</Paragraph>
         <ul className="list-disc list-inside text">
           {stack.map((tech) => (
-            <li className="font-primary text-dark-blue" key={tech}>
+            <li className="font-code text-gray-blue text-sm" key={tech}>
               {tech}
             </li>
           ))}

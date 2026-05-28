@@ -20,7 +20,7 @@ const platforms = [
 
 export default function Footer({ displayTitle, subtitle }: FooterProps) {
   return (
-    <footer className="bg-yellow px-60 py-30 flex flex-col gap-4 rounded-t-4xl relative">
+    <footer className="bg-yellow px-60 py-30 lg:px-80 flex flex-col gap-4 rounded-t-4xl relative">
       <h1 className="text-gray-blue font-primary font-bold text-8xl">
         {displayTitle}
       </h1>

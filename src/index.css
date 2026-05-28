@@ -2,17 +2,32 @@
 
 body {
     background-color: var(--color-creme);
+    /* cursor: url("/portfolio/public/cursor.svg"), auto; */
+}
+
+@keyframes nudge {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(12px); }
+}
+
+.nudge {
+  animation: nudge 0.4s ease-in-out;
 }
 
 @theme {
     --color-creme: #FAF5EF;
     --color-dark-blue: #404254;
     --color-gray-blue: #626474;
-    --color-light-blue: #CCD6F6;
+    --color-light-blue: #CCEBF6;
     --color-yellow: #FFF3A6;
     --color-light-red: #F5CAC3;
     --color-red: #F28482;
+    --color-dark-red: #AA2623;
     --color-green: #6FBE78;
+    --color-mustard: #E5D259;
+    --color-dark-mustard: #88770A;
+    --color-sky-blue: #90D7F0;
+    --color-sky-gray: #296F88;
     --color-white-overlay: rgba(255, 255, 255, 0.7);
     --font-primary: 'poppins', sans-serif;
     --font-code: 'source code pro', monospace;

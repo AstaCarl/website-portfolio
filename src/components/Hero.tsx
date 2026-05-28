@@ -10,7 +10,7 @@ type HeroProps = {
 
 export default function Hero({ subtitle, displayTitle, title, paragraph }: HeroProps) {
   return (
-    <section className="w-[80%] flex flex-col gap-8 p-60">
+    <section className="w-[80%] flex flex-col gap-8 p-60 lg:px-80">
         <div>
       <Title variant="h3" title={subtitle} />
       <h1 className="text-gray-blue font-primary font-bold text-8xl">
