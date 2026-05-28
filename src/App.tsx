@@ -17,7 +17,7 @@ function App() {
           title="I am a webdeveloper."
           paragraph="With a user-centered approach to building digital solutions. I combine my multimedia design background with modern development skills to create interfaces that are both intuitive and technically reliable. Whether optimizing internal workflows or developing client-facing applications, I strive to write clean, maintainable code that meets user needs."
         />
-        <div className="px-60 py-4 lg:px-80">
+        <div className="px-10 md:px-30 py-4 lg:px-80">
         <Title variant="h1" title="Some of the things I've made." />
 </div>
         {/* <Projects /> */}
