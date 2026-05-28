@@ -17,7 +17,6 @@ const platforms = [
   { icon: <GitIcon height={18} width={18} color="var(--color-gray-blue)" />, label: "GitHub: https://github.com" },
   { icon: <LinkedInIcon />, label: "LinkedIn: https://linkedin.com" },
 ];
-// lg:px-80
 
 export default function Footer({ displayTitle, subtitle }: FooterProps) {
   return (
@@ -30,7 +29,7 @@ export default function Footer({ displayTitle, subtitle }: FooterProps) {
       {platforms.map((platform) => (
         <div className="flex items-center gap-2">
         {platform.icon} 
-        <Paragraph variant="code" key={platform.label}>
+        <Paragraph className="text-xs md:text-base" variant="code" key={platform.label}>
           {platform.label}
         </Paragraph>
         </div>
