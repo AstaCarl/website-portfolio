@@ -2,7 +2,6 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-// import Projects from "./components/Projects";
 import Title from "./components/Title";
 import Tools from "./components/Tools";
 
@@ -20,7 +19,6 @@ function App() {
         <div className="px-10 md:px-30 py-4 lg:px-80">
         <Title variant="h1" title="Some of the things I've made." />
 </div>
-        {/* <Projects /> */}
         <Tools displayTitle="Tools i’ve worked with." />
       </main>
       <Footer
