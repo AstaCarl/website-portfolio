@@ -115,8 +115,8 @@ const row6 = tools.slice(11, 14);
 
 export default function Tools({ displayTitle }: ToolsProps) {
   return (
-    <section className="flex flex-col gap-8 px-10 py-30 md:px-30 lg:px-80 items-center">
-      <DisplayTitle title={displayTitle} />
+    <section className="flex flex-col gap-8 px-10 py-30 md:px-30 lg:px-60 items-center">
+      <DisplayTitle title={displayTitle} center={true} />
       <Title variant="h2" title="Technologies and Platforms I've Mastered" />
 
       <div className="flex items-center flex-col gap-4">

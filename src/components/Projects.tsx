@@ -46,9 +46,9 @@ const projects: Project[] = [
       },
     ],
     description:
-      "A web application built in collaboration with Simply Chocolate to replace their terminal-based script monitoring system. Working from problem discovery through to implementation, including a contextual inquiry with the stakeholder, Figma prototyping, and full-stack development.  The solution delivers a secure React dashboard with execution history, detailed log visualisation, and cron schedule management, backed by a Deno/Oak API and PostgreSQL database.",
+      "A web application built in collaboration with Simply Chocolate to replace their terminal-based script monitoring system, delivering a secure dashboard with execution history, log visualisation, and cron schedule management.",
     outcome:
-      "By replacing terminal-based monitoring with a secure web dashboard, the project made automated script monitoring accessible to the entire team, not just the developer who knew the terminal. Any staff member can now independently track script execution history, view logs, and manage schedules, removing a critical single point of dependency and improving overall operational resilience.",
+      "Replaced terminal-based monitoring with a dashboard accessible to the entire team removing a critical single point of dependency and making script monitoring independent of developer knowledge.",
     icon: "screen",
   },
   {
@@ -56,7 +56,7 @@ const projects: Project[] = [
     labelColor: "var(--color-sky-blue)",
     labelTextColor: "var(--color-sky-gray)",
     title: "2nd. Semester exam project",
-    name: "Washworld  - Car wash booking system",
+    name: "Washworld  - Car wash booking app",
     screenshot: WashWorldImg,
     stack: [
       {
@@ -77,9 +77,9 @@ const projects: Project[] = [
       },
     ],
     description:
-      "A web app for managing musician profiles and ensembles, built as a 1st semester exam project. Developed collaboratively using pair programming, with both developers contributing across the full stack, from React frontend to NestJS API and MongoDB.",
+      "A web application built in collaboration with Simply Chocolate to replace their terminal-based script monitoring system, delivering a secure dashboard with execution history, log visualisation, and cron schedule management.",
     outcome:
-      "Delivered a functional platform where musicians can create profiles, form ensembles, and discover others to play with. The project demonstrated end-to-end full-stack integration and a close collaborative workflow across the entire codebase.",
+      "Replaced terminal-based monitoring with a dashboard accessible to the entire team removing a critical single point of dependency and making script monitoring independent of developer knowledge.",
     icon: "phone",
   },
   {
@@ -105,9 +105,9 @@ const projects: Project[] = [
       },
     ],
     description:
-      "A web app for managing musician profiles and ensembles, built as a 1st semester exam project. Based on a real design case from Kvalifik, a Danish digital agency, including a full design and design system to implement. Developed collaboratively using pair programming, with both developers contributing across the full stack, from translating the Figma designs into React to building the NestJS API and MongoDB backend.",
+      "A web app for managing musician profiles and ensembles. Based on a real design case from Kvalifik, a Danish digital agency, including a full design and design system to implement. Developed collaboratively using pair programming, with both developers contributing across the full stack.",
     outcome:
-      "Delivered a functional platform where musicians can create profiles, form ensembles, and discover others to play with. The project demonstrated end-to-end full-stack integration, accurate implementation of a professional design system, and a close collaborative workflow across the entire codebase.",
+      "Delivered a functional platform where musicians can create profiles, form ensembles, and discover others to play with.",
     icon: "phone",
   },
 ];
@@ -158,7 +158,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <section
             key={index}
-            className={`${project.color} px-60 py-20 lg:px-80 flex flex-col gap-10 rounded-4xl`}
+            className={`${project.color} px-10 md:px-30 py-20 lg:px-60 flex flex-col gap-10 rounded-4xl`}
             style={{
               position: index === 0 ? "relative" : "absolute",
               top: 0,
@@ -217,12 +217,12 @@ export default function Projects() {
             ) : (
               <div className="flex w-full gap-8">
                 <img
-                  className="w-[30%]"
+                  className="w-[35%]"
                   src={project.screenshot}
                   alt={project.title}
                 />
-                <div className="flex flex-col gap-8">
-                  <div className="flex flex-col w-[60%] gap-2">
+                <div className="flex flex-col w-[60%] gap-8">
+                  <div className="flex flex-col gap-2">
                     <Title variant="h3" title={project.title} />
                     <Title variant="h2" title={project.name} />
                     <Paragraph>{project.description}</Paragraph>
@@ -253,7 +253,7 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  <div className="flex flex-col w-[60%] gap-2">
+                  <div className="flex flex-col gap-2">
                     <Title variant="h4" title="Outcome" />
                     <Paragraph>{project.outcome}</Paragraph>
                   </div>
