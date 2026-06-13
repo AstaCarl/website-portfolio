@@ -21,8 +21,8 @@ const platforms = [
 
 export default function Footer({ displayTitle, subtitle }: FooterProps) {
   return (
-    <footer className="bg-yellow px-10 pt-20 pb-74 md:px-30 lg:px-80 flex flex-col gap-4 rounded-t-4xl relative">
-      <DisplayTitle title={displayTitle} />
+    <footer className="bg-yellow px-10 pt-20 pb-74 md:px-30 lg:px-60 flex flex-col gap-4 rounded-t-4xl relative">
+      <DisplayTitle title={displayTitle} center={false} />
       <Title variant="h4" title={subtitle} />
       <div className="flex flex-col gap-4">
       {platforms.map((platform) => (
